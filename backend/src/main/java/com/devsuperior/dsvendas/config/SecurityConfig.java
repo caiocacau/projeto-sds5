@@ -28,7 +28,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			http.headers().frameOptions().disable();
 		}
 
-		
 		http.cors().and().csrf().disable();
 		// Api Rest preconiza que não mantenha STATE
 		http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
